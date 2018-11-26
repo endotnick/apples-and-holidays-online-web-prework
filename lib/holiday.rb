@@ -60,7 +60,9 @@ def all_supplies_in_holidays(holiday_hash)
     season[0] = season[0].capitalize
     puts "#{season}:"
     holiday_hash[k].each do |k, v|
-      puts "\t#{k}: #{v.flatten}"
+      holiday = k.to_s
+      holiday[0] = holiday[0].capitalize
+      puts "\t#{holiday}: #{v.flatten}"
     end
   end
 end
