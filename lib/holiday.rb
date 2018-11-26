@@ -62,7 +62,7 @@ def all_supplies_in_holidays(holiday_hash)
     holiday_hash[k].each do |k, v|
       holiday = k.to_s
       holiday[0] = holiday[0].capitalize
-      puts "\t#{holiday}: #{v.flatten}"
+      puts "  #{holiday}: #{v.flatten}"
     end
   end
 end
