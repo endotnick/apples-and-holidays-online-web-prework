@@ -61,7 +61,6 @@ def all_supplies_in_holidays(holiday_hash)
       holiday = k.to_s.split('_').collect do |word|
         word.capitalize!.join(' ')
       end
-      holiday[0] = holiday[0].capitalize
       puts "  #{holiday}: #{v.join(', ')}"
     end
   end
