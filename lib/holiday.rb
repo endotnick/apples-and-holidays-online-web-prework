@@ -63,7 +63,7 @@ def all_supplies_in_holidays(holiday_hash)
       holiday = k.to_s
       holiday[0] = holiday[0].capitalize
       supplies = v.flatten
-      puts "  #{holiday}: #{v.flatten}"
+      puts "  #{holiday}: #{supplies}"
     end
   end
 end
